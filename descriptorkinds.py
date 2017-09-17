@@ -49,3 +49,11 @@ obj.over
 obj.__dict__['over']=8
 print(vars(obj))
 obj.over
+
+
+obj.non_over
+obj.non_over=7
+print(obj.non_over)
+Managed.non_over
+del obj.non_over
+obj.non_over
