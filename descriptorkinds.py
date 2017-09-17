@@ -41,19 +41,25 @@ class Managed:
     def spam(self):
         print('-> Managed.spam({})'.format(display(self)))
 
+# obj=Managed()
+# obj.over
+# Managed.over
+# obj.over=7
+# obj.over
+# obj.__dict__['over']=8
+# print(vars(obj))
+# obj.over
+
+
+# obj.non_over
+# obj.non_over=7
+# print(obj.non_over)
+# Managed.non_over
+# del obj.non_over
+# obj.non_over
+
 obj=Managed()
-obj.over
-Managed.over
-obj.over=7
-obj.over
-obj.__dict__['over']=8
-print(vars(obj))
-obj.over
-
-
-obj.non_over
-obj.non_over=7
-print(obj.non_over)
-Managed.non_over
-del obj.non_over
-obj.non_over
+Managed.over=1
+Managed.over_no_get=2
+Managed.non_over=3
+print(obj.over,obj.over_no_get,obj.non_over)
